@@ -1,27 +1,65 @@
+/* ==========================================================================
+    Template Name:  - HTML5 Template
+    Template URI: 
+    Description: HTML5 Template
+    Author: abcdevs
+    Author URI: 
+    Version: 1.0
+========================================================================== */
+/* CSS Index 
+-----------------------------------
+01. Template default css
+01. Header css
+02. Banner css
+02. Service css
+
+/*==========================================================================
+Google Font
+========================================================================== */
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
+/*...................................
+    01. Template default css
+................................... */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
+.btn {
+  padding: 15px 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/*...................................
+    02. Header css
+................................... */
 #header {
   background-color: #d5d2d2;
 }
+
 #header .nav-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
 }
+
 #header .items {
   display: flex;
   list-style: none;
 }
+
 #header .items .item {
   margin-left: 15px;
   padding: 15px;
@@ -29,6 +67,10 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
+
+/*...................................
+    02. Banner css
+................................... */
 #banner {
   display: flex;
   width: 100%;
@@ -41,28 +83,192 @@ body {
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
 }
-#banner .banner-decscription {
-}
+
+#banner .banner-decscription {}
+
 #banner .banner-decscription h1 {
   font-size: 60px;
   margin-bottom: 20px;
 }
+
 #banner .banner-decscription span {
   color: #f52c2c;
 }
+
 #banner .banner-decscription p {
   width: 900px;
   font-size: 20px;
   margin-bottom: 30px;
 }
+
 #banner .banner-decscription .banner-btns .primary-btn {
   background-color: #f52c2c;
   color: #fff;
 }
-.btn {
-  padding: 15px 30px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+
+/*...................................
+    03. Service css
+................................... */
+
+#service {
+  width: 100vw;
+  height: 100%;
+  background-image: repeating-radial-gradient(circle at center center,
+      transparent 0px,
+      transparent 8px,
+      rgba(255, 255, 255, 0.05) 8px,
+      rgba(255, 255, 255, 0.05) 11px,
+      transparent 11px,
+      transparent 17px,
+      rgba(255, 255, 255, 0.05) 17px,
+      rgba(255, 255, 255, 0.05) 25px,
+      transparent 25px,
+      transparent 38px,
+      rgba(255, 255, 255, 0.05) 38px,
+      rgba(255, 255, 255, 0.05) 42px),
+    repeating-radial-gradient(circle at center center,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 11px,
+      rgb(0, 0, 0) 11px,
+      rgb(0, 0, 0) 19px,
+      rgb(0, 0, 0) 19px,
+      rgb(0, 0, 0) 24px,
+      rgb(0, 0, 0) 24px,
+      rgb(0, 0, 0) 33px,
+      rgb(0, 0, 0) 33px,
+      rgb(0, 0, 0) 44px,
+      rgb(0, 0, 0) 44px,
+      rgb(0, 0, 0) 46px);
+  background-size: 60px 60px;
+}
+
+#service .main-container {
+  display: flex;
+  padding: 100px 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#service .left-container {
+  width: 50vw;
+}
+
+#service .left-container button {
+  font-weight: 400;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#service .service-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #becfd0;
+  margin: 22px 0;
+}
+
+#service .service-desc {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #becfd0;
+  margin-bottom: 20px;
+}
+
+#service .service-items {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #becfd0;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+#service .service-item {
+  margin-bottom: 5px;
+}
+
+#service .service-profile-container {
+  display: flex;
+}
+
+#service .left-profile-container {
+  display: flex;
+  border-right: 1px solid red;
+  padding-right: 20px;
+}
+
+#service .author-img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#service .author-name {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+#service .author-full-name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+#service .author-full-pro {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+#service .right-profile-container {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#service .right-container {
+  width: 50vw;
+  padding: 50px;
+}
+
+#service .up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#service .sector {
+  height: 255px;
+  width: 241px;
+  background-color: #fff;
+  padding: 30px;
+  margin: 7px;
+}
+
+#service .sector img {
+  width: 150px;
+  height: 150px;
+}
+
+#service .sector h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+}
+
+#service .down-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
