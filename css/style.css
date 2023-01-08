@@ -9,9 +9,10 @@
 /* CSS Index 
 -----------------------------------
 01. Template default css
-01. Header css
-02. Banner css
-02. Service css
+02. Header css
+03. Banner css
+04. Service css
+05. ppointment css
 
 /*==========================================================================
 Google Font
@@ -69,7 +70,7 @@ body {
 }
 
 /*...................................
-    02. Banner css
+    03. Banner css
 ................................... */
 #banner {
   display: flex;
@@ -84,7 +85,8 @@ body {
   background-blend-mode: overlay;
 }
 
-#banner .banner-decscription {}
+#banner .banner-decscription {
+}
 
 #banner .banner-decscription h1 {
   font-size: 60px;
@@ -107,13 +109,14 @@ body {
 }
 
 /*...................................
-    03. Service css
+    04. Service css
 ................................... */
 
 #service {
   width: 100vw;
   height: 100%;
-  background-image: repeating-radial-gradient(circle at center center,
+  background-image: repeating-radial-gradient(
+      circle at center center,
       transparent 0px,
       transparent 8px,
       rgba(255, 255, 255, 0.05) 8px,
@@ -125,8 +128,10 @@ body {
       transparent 25px,
       transparent 38px,
       rgba(255, 255, 255, 0.05) 38px,
-      rgba(255, 255, 255, 0.05) 42px),
-    repeating-radial-gradient(circle at center center,
+      rgba(255, 255, 255, 0.05) 42px
+    ),
+    repeating-radial-gradient(
+      circle at center center,
       rgb(0, 0, 0) 0px,
       rgb(0, 0, 0) 11px,
       rgb(0, 0, 0) 11px,
@@ -138,7 +143,8 @@ body {
       rgb(0, 0, 0) 33px,
       rgb(0, 0, 0) 44px,
       rgb(0, 0, 0) 44px,
-      rgb(0, 0, 0) 46px);
+      rgb(0, 0, 0) 46px
+    );
   background-size: 60px 60px;
 }
 
@@ -271,4 +277,55 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/*...................................
+    05. appointment css
+................................... */
+#Appointmen {
+  width: 100vw;
+  height: 200px;
+}
+#Appointmen .appoint-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+  background: #f52c2c;
+  padding: 40px;
+  border-radius: 40px;
+  margin-top: -80px;
+}
+#Appointmen .left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 30%; */
+  border-right: 2px solid #808080;
+}
+#Appointmen .logo img {
+  width: 100px;
+  height: 100px;
+}
+#Appointmen .contact {
+  margin-left: 15px;
+  color: #fff;
+}
+#Appointmen .contact p {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 400;
+  width: 200px;
+  margin-bottom: 7px;
+}
+
+#Appointmen .center-container p {
+  color: #fff;
+  width: 600px;
+  padding: 0 10px;
+}
+#Appointmen .right-container > button {
+  border-radius: 40px;
+  padding: 10 20px;
 }
