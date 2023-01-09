@@ -13,6 +13,8 @@
 03. Banner css
 04. Service css
 05. ppointment css
+06. Blog css
+
 
 /*==========================================================================
 Google Font
@@ -328,4 +330,63 @@ body {
 #Appointmen .right-container > button {
   border-radius: 40px;
   padding: 10 20px;
+}
+
+/*...................................
+    06. blog css
+................................... */
+
+#blog {
+  width: 100vw;
+}
+#blog .header-container {
+  text-align: center;
+  margin: 50px auto;
+  width: 741px;
+}
+
+#blog .header-container h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+#blog .header-container span {
+  color: rgb(245, 44, 44);
+}
+#blog .header-container p {
+  font-size: 19px;
+}
+#blog .box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto;
+}
+#blog .box-img {
+  width: 100%;
+  height: 283px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+#blog .box {
+  width: 352px;
+  background: white;
+  box-shadow: 4px 4px 8px grey;
+  border-radius: 10px;
+}
+
+#blog .box h2 {
+  font-size: 21px;
+  font-weight: bold;
+  color: rgb(54, 53, 53);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 7px;
+}
+#blog .box p {
+  font-size: 18px;
+  color: rgb(76, 72, 72);
+  padding: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
