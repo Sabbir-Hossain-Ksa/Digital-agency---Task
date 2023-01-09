@@ -14,8 +14,7 @@
 04. Service css
 05. ppointment css
 06. Blog css
-
-
+07. Footer css
 /*==========================================================================
 Google Font
 ========================================================================== */
@@ -87,8 +86,7 @@ body {
   background-blend-mode: overlay;
 }
 
-#banner .banner-decscription {
-}
+#banner .banner-decscription {}
 
 #banner .banner-decscription h1 {
   font-size: 60px;
@@ -117,8 +115,7 @@ body {
 #service {
   width: 100vw;
   height: 100%;
-  background-image: repeating-radial-gradient(
-      circle at center center,
+  background-image: repeating-radial-gradient(circle at center center,
       transparent 0px,
       transparent 8px,
       rgba(255, 255, 255, 0.05) 8px,
@@ -130,10 +127,8 @@ body {
       transparent 25px,
       transparent 38px,
       rgba(255, 255, 255, 0.05) 38px,
-      rgba(255, 255, 255, 0.05) 42px
-    ),
-    repeating-radial-gradient(
-      circle at center center,
+      rgba(255, 255, 255, 0.05) 42px),
+    repeating-radial-gradient(circle at center center,
       rgb(0, 0, 0) 0px,
       rgb(0, 0, 0) 11px,
       rgb(0, 0, 0) 11px,
@@ -145,8 +140,7 @@ body {
       rgb(0, 0, 0) 33px,
       rgb(0, 0, 0) 44px,
       rgb(0, 0, 0) 44px,
-      rgb(0, 0, 0) 46px
-    );
+      rgb(0, 0, 0) 46px);
   background-size: 60px 60px;
 }
 
@@ -288,6 +282,7 @@ body {
   width: 100vw;
   height: 200px;
 }
+
 #Appointmen .appoint-container {
   display: flex;
   justify-content: center;
@@ -299,6 +294,7 @@ body {
   border-radius: 40px;
   margin-top: -80px;
 }
+
 #Appointmen .left-container {
   display: flex;
   justify-content: center;
@@ -306,14 +302,17 @@ body {
   /* width: 30%; */
   border-right: 2px solid #808080;
 }
+
 #Appointmen .logo img {
   width: 100px;
   height: 100px;
 }
+
 #Appointmen .contact {
   margin-left: 15px;
   color: #fff;
 }
+
 #Appointmen .contact p {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
@@ -327,7 +326,8 @@ body {
   width: 600px;
   padding: 0 10px;
 }
-#Appointmen .right-container > button {
+
+#Appointmen .right-container>button {
   border-radius: 40px;
   padding: 10 20px;
 }
@@ -339,6 +339,7 @@ body {
 #blog {
   width: 100vw;
 }
+
 #blog .header-container {
   text-align: center;
   margin: 50px auto;
@@ -350,12 +351,15 @@ body {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
+
 #blog .header-container span {
   color: rgb(245, 44, 44);
 }
+
 #blog .header-container p {
   font-size: 19px;
 }
+
 #blog .box-container {
   display: flex;
   justify-content: space-between;
@@ -363,12 +367,14 @@ body {
   width: 80%;
   margin: 30px auto;
 }
+
 #blog .box-img {
   width: 100%;
   height: 283px;
   border-radius: 10px;
   padding-bottom: 10px;
 }
+
 #blog .box {
   width: 352px;
   background: white;
@@ -380,13 +386,86 @@ body {
   font-size: 21px;
   font-weight: bold;
   color: rgb(54, 53, 53);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   padding: 7px;
 }
+
 #blog .box p {
   font-size: 18px;
   color: rgb(76, 72, 72);
   padding: 7px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
 
+/*...................................
+    07. footer css
+................................... */
+#footer {
+  width: 100%;
+  height: 70vh;
+  background-image: url(./asset/image/footer-bg.png),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+  line-height: 1.8em;
+}
+
+#footer .footer-container {
+  display: flex;
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+#footer .logo-box {
+  width: 35%;
+  padding-right: 58px;
+}
+
+#footer .logo-box img {
+  width: 170px;
+}
+
+#footer .logo-para {
+  width: 322px;
+  padding-right: 20px;
+  margin-bottom: 19px;
+}
+
+#footer .footer-icon {
+  padding-right: 19px;
+  font-size: 23px;
+}
+
+#footer .useful-links {
+  width: 25%;
+}
+
+#footer .footer-title {
+  margin-bottom: 13px;
+}
+
+#footer .useful-links p {}
+
+#footer .supports {
+  width: 25%;
+}
+
+#footer .supports h3 {}
+
+#footer .supports p {}
+
+#footer .contact {
+  width: 25%;
+}
+
+#footer .copy {
+  text-align: center;
+  margin: 20px 0;
 }
